@@ -1,0 +1,6 @@
+{
+  "logLevel": "debug",
+  "isolateDirName": "isolated",
+
+  "pickFromScripts": ["gcp-build", "start"]
+}

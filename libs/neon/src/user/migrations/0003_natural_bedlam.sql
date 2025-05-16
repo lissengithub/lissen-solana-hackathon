@@ -1,0 +1,1 @@
+ALTER TABLE "artists_preferences" ADD COLUMN "is_processed" boolean DEFAULT false NOT NULL;

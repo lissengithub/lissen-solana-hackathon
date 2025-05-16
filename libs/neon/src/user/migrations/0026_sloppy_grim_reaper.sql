@@ -1,0 +1,1 @@
+DROP TABLE "app_events_processing";

@@ -1,0 +1,1 @@
+DROP TABLE "recommendations_global_artist_popular_songs";

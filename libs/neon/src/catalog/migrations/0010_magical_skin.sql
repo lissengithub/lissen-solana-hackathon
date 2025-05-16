@@ -1,0 +1,1 @@
+ALTER TABLE "creators_songs" ALTER COLUMN "role" SET DATA TYPE varchar(40);

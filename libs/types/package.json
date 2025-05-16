@@ -1,0 +1,72 @@
+{
+  "name": "@libs/types",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^18.18.2",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.5.4",
+    "@google-cloud/bigquery": "~7.4.0"
+  },
+  "engines": {
+    "node": "18.18.2",
+    "pnpm": "8.13.1"
+  },
+  "prettier": {
+    "singleQuote": false,
+    "semi": true,
+    "trailingComma": "all",
+    "tabWidth": 2
+  },
+  "eslintConfig": {
+    "env": {
+      "commonjs": true,
+      "es2021": true,
+      "node": true
+    },
+    "extends": [
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "prettier",
+      "plugin:eslint-comments/recommended"
+    ],
+    "ignorePatterns": [
+      "dist",
+      "isolated",
+      "node_modules",
+      "**/*.spec.ts"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+      "project": true,
+      "ecmaVersion": "latest"
+    },
+    "plugins": [
+      "@typescript-eslint"
+    ],
+    "rules": {
+      "linebreak-style": [
+        "error",
+        "unix"
+      ],
+      "@typescript-eslint/no-explicit-any": "warn",
+      "@typescript-eslint/no-floating-promises": [
+        "error",
+        {
+          "ignoreVoid": false
+        }
+      ],
+      "@typescript-eslint/switch-exhaustiveness-check": "error",
+      "no-restricted-syntax": [
+        "error",
+        "Literal[value=OVERRIDE]"
+      ],
+      "eslint-comments/require-description": "error"
+    }
+  }
+}

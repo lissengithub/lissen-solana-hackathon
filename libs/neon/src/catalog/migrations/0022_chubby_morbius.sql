@@ -1,0 +1,2 @@
+CREATE INDEX IF NOT EXISTS "live_songs_genre_idx" ON "live_songs" USING btree ("genre_id");--> statement-breakpoint
+CREATE INDEX IF NOT EXISTS "live_songs_popularity_idx" ON "live_songs" USING btree ("spotify_popularity");

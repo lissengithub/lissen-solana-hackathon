@@ -1,0 +1,1 @@
+ALTER TABLE "live_songs" ADD COLUMN "creators" jsonb;

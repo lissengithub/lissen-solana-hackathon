@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS "fml_artist_metrics_name_gin_idx" ON "fml_artist_metrics" USING GIN ("name" gin_trgm_ops);

@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS "live_songs_artist_text_title_gin_idx" ON "live_songs" USING gin (("artist_text" || ' ' || "title") gin_trgm_ops);

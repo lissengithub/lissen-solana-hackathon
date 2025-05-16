@@ -1,0 +1,1 @@
+ALTER TABLE "live_artists" ADD COLUMN "has_profile_image" boolean;

@@ -1,0 +1,280 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 353 65% 59%;
+    --primary-foreground: 210 40% 98%;
+
+    --secondary: 27 86% 63%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 210 40% 96.1%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --success: 131 58% 66%;
+    --success-background: 189 27% 14%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 222.2 84% 4.9%;
+
+    --radius: 0.5rem;
+
+    --experience-accent-1: #f6e1a4;
+    --experience-accent-2: #04ab04;
+    --experience-accent-3: #f36362;
+    --experience-accent-4: #56ccf2;
+
+    --experience-accent-gradient-1: linear-gradient(
+      209.16deg,
+      var(--experience-accent-1) 4.45%,
+      #d67c00 94.95%
+    );
+    --experience-accent-gradient-2: linear-gradient(
+      54.82deg,
+      var(--experience-accent-2) 5.79%,
+      #a5dc9c 93.59%
+    );
+    --experience-accent-gradient-3: linear-gradient(
+      54.82deg,
+      var(--experience-accent-3) 5.79%,
+      #ffa084 93.59%
+    );
+    --experience-accent-gradient-4: linear-gradient(
+      180deg,
+      var(--experience-accent-4) 0%,
+      #2f80ed 100%
+    );
+
+    --fml-gradient-from: #ff9f4d;
+    --fml-gradient-via: #f472b6;
+    --fml-gradient-to: #60a5fa;
+    --fml-card-bg: rgba(0, 0, 0, 0.3);
+    --fml-score-bg: rgba(0, 0, 0, 0.4);
+    --fml-emerald: #10b981;
+    --fml-purple: #9333ea;
+    --fml-teal: #0d9488;
+    --fml-amber: #d97706;
+    --fml-text-gray: #9ca3af;
+    --fml-cta-from: #f97316;
+    --fml-cta-to: #ec4899;
+  }
+
+  .dark {
+    --background: 204, 10%, 10%;
+    --foreground: 210 40% 98%;
+
+    --card: 222.2 84% 4.9%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 222.2 84% 4.9%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 353 65% 59%;
+    --primary-foreground: 222.2 47.4% 11.2%;
+
+    --secondary: 27 86% 63%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 217.2 32.6% 17.5%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 217.2 32.6% 17.5%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 217.2 32.6% 17.5%;
+    --input: 217.2 32.6% 17.5%;
+    --ring: 212.7 26.8% 83.9%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}
+
+input {
+  min-width: 0px;
+}
+
+.coming-soon-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: conic-gradient(
+    from 180deg at 50% 50%,
+    #ff5722 84deg,
+    #f8d94b 93deg,
+    #8bf3ff 258deg,
+    #f25565 268deg,
+    #f8ad4b 279deg,
+    #ff5722 347deg
+  );
+}
+
+.primary-text-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: linear-gradient(
+    to right,
+    hsl(var(--primary)) 0.12%,
+    hsl(var(--secondary)) 20.35%
+  );
+}
+
+.text-stroke-1 {
+  text-shadow: 0 0 2px #000;
+}
+
+.text-stroke-2 {
+  text-shadow: 0 0 4px #000;
+}
+
+.youtubeContainer {
+  position: relative;
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin-bottom: 50px;
+  border-radius: 30px;
+}
+
+.youtubeContainer iframe {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.mask-image-fade {
+  mask-image: radial-gradient(ellipse at center, black 50%, transparent 80%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 50%, transparent 80%);
+}
+
+.scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #6b6b6b hsl(var(--background));
+}
+
+.scrollbar::-webkit-scrollbar {
+  width: 8px;
+}
+
+.scrollbar::-webkit-scrollbar-track {
+  background: hsl(var(--background));
+}
+
+.scrollbar::-webkit-scrollbar-thumb {
+  background: #6b6b6b;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animate-float {
+  animation: float 3s ease-in-out infinite;
+}
+
+.bg-gradient-radial {
+  background: linear-gradient(224.88deg, #000000 1.67%, #FFFFFF 98.95%);
+  opacity: 0.6;
+  filter: blur(150px);
+}
+
+/* Fantasy Music League specific styles */
+.mask-radial-fade {
+  mask-image: radial-gradient(ellipse at center, black 60%, transparent 90%);
+  -webkit-mask-image: radial-gradient(ellipse at center, black 60%, transparent 90%);
+}
+
+.fml-title-gradient {
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  background-image: conic-gradient(
+    from 180deg at 50% 24%,
+    #ff5722 82deg,
+    #f8d94b 92deg,
+    #f25565 271deg,
+    #8bf3ff 275deg,
+    #f8ad4b 284deg,
+    #ff5722 338deg
+  );
+}
+
+.fml-card {
+  background-color: var(--fml-card-bg);
+  backdrop-filter: blur(8px);
+}
+
+.fml-score-badge {
+  background-color: var(--fml-score-bg);
+  backdrop-filter: blur(8px);
+}
+
+.fml-cta-button {
+  color: black;
+  background: 
+    radial-gradient(ellipse 100% 100% at 50% 0%, #FF5722 0%, transparent 70%),
+    radial-gradient(120% 150% at 100% -20%, #FFEB3B 0%, rgba(255, 235, 59, 0.7) 100%),
+    linear-gradient(135deg, #FFE600, #FFB300 70%, #FF9800);
+  box-shadow: 0 2px 15px rgba(255, 182, 0, 0.4);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+}
+
+.fml-prize-rank-1 {
+  background: linear-gradient(to right, #DFBC40, #DA9F38);
+}
+.fml-prize-rank-2 {
+  background: linear-gradient(to right, #C2E8FD, #909090, #DDDDDD);
+}
+.fml-prize-rank-3 {
+  background: linear-gradient(to right, #F29951, #AE492B, #F2BA7A);
+}
+
+.fml-game-prize-badge {
+  color: black;
+  background: 
+    radial-gradient(ellipse 100% 100% at 50% 0%, #FC877E 0%, transparent 70%),
+    radial-gradient(120% 150% at 100% -20%, #FFB147 0%, rgba(255, 235, 59, 0.7) 100%),
+    linear-gradient(135deg, #FFB147, #FFB300 70%, #FF9800);
+  box-shadow: 0 2px 15px rgba(255, 182, 0, 0.4);
+  text-shadow: 0 1px 2px rgba(255, 255, 255, 0.3);
+  font-weight: 600;
+}

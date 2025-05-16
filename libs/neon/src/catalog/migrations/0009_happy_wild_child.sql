@@ -1,0 +1,1 @@
+ALTER TABLE "live_albums" ADD COLUMN "release_date" varchar;

@@ -1,0 +1,1 @@
+CREATE INDEX IF NOT EXISTS "live_songs_albums_idx" ON "live_songs" USING btree ("album_id");

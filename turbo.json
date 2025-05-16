@@ -1,0 +1,57 @@
+{
+  "$schema": "https://turbo.build/schema.json",
+  "globalPassThroughEnv": [
+    "temp.env"
+  ],
+  "pipeline": {
+    "build": {
+      "outputMode": "new-only",
+      "outputs": [
+        "dist/**"
+      ],
+      "dependsOn": [
+        "^build"
+      ]
+    },
+    "lint-ts": {
+      "outputMode": "errors-only"
+    },
+    "lint-eslint": {
+      "outputMode": "errors-only"
+    },
+    "lint-circular": {
+      "outputMode": "errors-only"
+    },
+    "lint-dead-code": {
+      "outputMode": "errors-only"
+    },
+    "lint": {
+      "dependsOn": [
+        "lint-ts",
+        "lint-eslint",
+        "lint-circular"
+      ]
+    },
+    "format": {},
+    "test": {},
+    "isolate": {
+      "outputMode": "new-only",
+      "outputs": [
+        "isolated/**"
+      ],
+      "dependsOn": [
+        "build",
+        "^build",
+        "^isolate"
+      ]
+    },
+    "dev": {
+      "outputs": [
+        "dist/**"
+      ],
+      "dependsOn": [
+        "^build"
+      ]
+    }
+  }
+}

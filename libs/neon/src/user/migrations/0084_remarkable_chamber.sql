@@ -1,0 +1,1 @@
+ALTER TABLE "fml_contest_participants" ADD COLUMN "sc_artist_ids" varchar(36)[] DEFAULT '{}' NOT NULL;

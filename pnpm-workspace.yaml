@@ -1,0 +1,7 @@
+packages:
+  - "libs/logger"
+  - "libs/neon"
+  - "libs/types"
+  - "libs/utils"
+  - "lissen-website"
+  - "api"

@@ -1,0 +1,21 @@
+# Ignore node_modules
+node_modules
+
+.build
+
+# mac
+.DS_Store
+
+.turbo
+
+# any dist folder in any directory
+**/dist
+
+# any build folder in any directory
+**/build
+
+# any isolated folder in any directory
+**/isolated
+
+# any .env file in any directory
+**/.env

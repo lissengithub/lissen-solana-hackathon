@@ -1,0 +1,1 @@
+ALTER TABLE "live_albums" ALTER COLUMN "total_duration" DROP NOT NULL;

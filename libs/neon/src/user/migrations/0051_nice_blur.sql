@@ -1,0 +1,1 @@
+ALTER TABLE "ghost_network_configs" ADD COLUMN "users" jsonb DEFAULT '[]'::jsonb;

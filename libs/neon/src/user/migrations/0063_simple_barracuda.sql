@@ -1,0 +1,2 @@
+ALTER TABLE "fml_artist_metrics" ADD COLUMN "total_base_points" integer DEFAULT 0 NOT NULL;--> statement-breakpoint
+ALTER TABLE "fml_artist_metrics" ADD COLUMN "total_engagement_points" integer DEFAULT 0 NOT NULL;

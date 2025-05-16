@@ -1,0 +1,2 @@
+CREATE INDEX IF NOT EXISTS "fml_artist_metrics_total_points_idx" ON "fml_artist_metrics" USING btree ("total_points");--> statement-breakpoint
+CREATE INDEX IF NOT EXISTS "fml_artist_metrics_total_points_pct_idx" ON "fml_artist_metrics" USING btree ("total_points_pct");

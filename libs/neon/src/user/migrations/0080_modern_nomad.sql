@@ -1,0 +1,1 @@
+ALTER TABLE "fml_leagues" ADD COLUMN "color" varchar(25);

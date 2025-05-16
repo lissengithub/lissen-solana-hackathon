@@ -1,0 +1,1 @@
+ALTER TABLE "fml_artists" ADD PRIMARY KEY IF NOT EXISTS ("sc_artist_id");

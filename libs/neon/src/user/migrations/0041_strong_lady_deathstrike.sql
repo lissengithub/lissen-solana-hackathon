@@ -1,0 +1,1 @@
+ALTER TABLE "experiences_raffle_tickets" ADD COLUMN "won" boolean DEFAULT false NOT NULL;

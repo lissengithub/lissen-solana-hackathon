@@ -1,0 +1,2 @@
+ALTER TABLE "gem_transaction_history" ADD COLUMN "bonus_direct_id" varchar(36);--> statement-breakpoint
+CREATE INDEX IF NOT EXISTS "gem_transaction_history_bonus_direct_idx" ON "gem_transaction_history" USING btree ("action","user_id","bonus_direct_id");

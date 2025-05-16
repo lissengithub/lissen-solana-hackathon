@@ -1,0 +1,1 @@
+ALTER TABLE "fml_artist_metrics" ADD COLUMN "genres" jsonb;

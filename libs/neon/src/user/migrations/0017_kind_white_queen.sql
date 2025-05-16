@@ -1,0 +1,1 @@
+ALTER TABLE "experiences" ADD COLUMN "raffle_drawn" boolean DEFAULT false NOT NULL;

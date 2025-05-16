@@ -1,0 +1,1 @@
+ALTER TABLE "fml_rosters" ADD COLUMN "league_id" varchar(36) DEFAULT '' NOT NULL;

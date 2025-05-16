@@ -1,0 +1,1 @@
+ALTER TABLE "ghost_network_configs" ALTER COLUMN "actual_daily_spend" SET DATA TYPE numeric(10, 2);
